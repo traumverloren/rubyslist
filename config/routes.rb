@@ -4,6 +4,8 @@ Rails.application.routes.draw do
     resources :subcategories
   end
 
+  resources :listings
+
   root 'categories#index'
 
   get 'help' => "pages#help"

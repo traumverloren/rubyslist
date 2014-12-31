@@ -1,0 +1,28 @@
+<div class="topbar">
+  <div class="container">
+    <div class="vertical-center">
+      rubyslist > jobs > accounting
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div id="contact-area">
+    <%= form_for @listing do |f| %>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+
+    <%= f.label :city %>
+    <%= f.text_field :city %>
+
+    <%= f.label :state %>
+    <%= f.text_field :state %>
+
+    <%= f.label :zipcode %>
+    <%= f.text_field :zipcode, class: "zip-width", maxlength: "5" %>
+    <%= f.submit class: "create-button" %>
+    <% end %>
+      </div>
+</div>
