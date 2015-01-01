@@ -15,5 +15,5 @@ Rails.application.routes.draw do
   get 'privacy' => "pages#privacy"
   get 'about' => "pages#about"
   get 'contact' => "pages#contact"
-
+  post 'subcategories/find_by_category' => 'subcategories#find_by_category'
 end
