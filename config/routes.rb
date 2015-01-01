@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  devise_for :users
   resources :categories do
     resources :subcategories
   end
@@ -20,4 +21,5 @@ Rails.application.routes.draw do
   get 'about' => "pages#about"
   get 'contact' => "pages#contact"
   post 'subcategories/find_by_category' => 'subcategories#find_by_category'
+  get 'mylistings' => "listings#mylistings"
 end

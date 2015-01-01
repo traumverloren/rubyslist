@@ -18,6 +18,8 @@ class ListingsController <ApplicationController
     @listings = Listing.search(params)
   end
 
+  def mylistings
+  end
 
   private
 
