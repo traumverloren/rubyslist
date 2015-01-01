@@ -15,7 +15,7 @@ class ListingsController <ApplicationController
   end
 
   def search
-    @listing = Listing.search(params)
+    @listings = Listing.search(params)
   end
 
 
