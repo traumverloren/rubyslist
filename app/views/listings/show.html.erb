@@ -1,7 +1,7 @@
 <div class="topbar">
   <div class="container">
     <div class="vertical-center">
-      <%= link_to 'rubyslist', root_path %> > jobs > accounting
+      <%= link_to 'rubyslist', root_path %> > <%= link_to @listing.category.name, category_path(@listing.category) %> > <%= link_to @listing.subcategory.name, category_subcategory_path(@listing.category, @listing.subcategory) %>
     </div>
   </div>
 </div>
